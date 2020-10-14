@@ -17,7 +17,7 @@ public class Reduce {
     }
 
     public int getMaxValue() {
-        throw new NotImplementedException();
+        return arrayList.stream().max(Integer::compare).get();
     }
 
     public int getLastOdd() {
