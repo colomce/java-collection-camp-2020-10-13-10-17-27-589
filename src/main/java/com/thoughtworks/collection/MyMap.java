@@ -1,9 +1,9 @@
 package com.thoughtworks.collection;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
 
+import static java.util.Comparator.reverseOrder;
 import static java.util.stream.Collectors.toList;
 
 public class MyMap {
@@ -26,6 +26,6 @@ public class MyMap {
     }
 
     public List<Integer> sortFromBig() {
-        return array.stream().sorted(Comparator.reverseOrder()).collect(toList());
+        return array.stream().sorted(reverseOrder()).collect(toList());
     }
 }
