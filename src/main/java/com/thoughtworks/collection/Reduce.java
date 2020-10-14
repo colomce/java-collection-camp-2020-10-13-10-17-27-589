@@ -13,7 +13,7 @@ public class Reduce {
     }
 
     public double getAverage() {
-        throw new NotImplementedException();
+        return arrayList.stream().mapToDouble(Number::doubleValue).average().getAsDouble();
     }
 
     public int getMaxValue() {
