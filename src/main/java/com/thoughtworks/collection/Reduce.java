@@ -20,7 +20,7 @@ public class Reduce {
     }
 
     public int getMaxValue() {
-        return arrayList.stream().reduce(0, (num1, num2) -> Integer.max(num1, num2));
+        return arrayList.stream().reduce(0, Integer::max);
     }
 
     public int getLastOdd() {
