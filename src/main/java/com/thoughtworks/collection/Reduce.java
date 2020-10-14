@@ -16,7 +16,7 @@ public class Reduce {
     public double getAverage() {
         int numberOfElements = arrayList.size();
         List<Double> numbers = arrayList.stream().map(Double::valueOf).collect(Collectors.toList());
-        return numbers.stream().reduce((number1, number2) -> number1 + number2).map(total -> total / numberOfElements).get();
+        return numbers.stream().reduce(Double::sum).map(total -> total / numberOfElements).get();
     }
 
     public int getMaxValue() {
