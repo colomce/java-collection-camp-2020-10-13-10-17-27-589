@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 public class Filter {
 
-    List<Integer> array;
+    private List<Integer> array;
 
     public Filter(List<Integer> array) {
         this.array = array;

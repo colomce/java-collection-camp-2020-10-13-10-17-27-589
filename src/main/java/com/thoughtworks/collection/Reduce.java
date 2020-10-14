@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 public class Reduce {
 
-    List<Integer> arrayList;
+    private List<Integer> arrayList;
 
     public Reduce(List<Integer> arrayList) {
         this.arrayList = arrayList;
