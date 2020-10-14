@@ -1,15 +1,14 @@
 package com.thoughtworks.collection;
 
-import org.apache.commons.lang3.NotImplementedException;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class Filter {
 
-    List<Integer>  array;
+    List<Integer> array;
 
     public Filter(List<Integer> array) {
-     this.array = array;
+        this.array = array;
     }
 
     public List<Integer> filterEven() {
