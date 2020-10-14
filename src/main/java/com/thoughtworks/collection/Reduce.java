@@ -20,7 +20,7 @@ public class Reduce {
     }
 
     public int getMaxValue() {
-        return arrayList.stream().reduce(0, Integer::max);
+        return arrayList.stream().reduce(Integer.MIN_VALUE, Integer::max);
     }
 
     public int getLastOdd() {
