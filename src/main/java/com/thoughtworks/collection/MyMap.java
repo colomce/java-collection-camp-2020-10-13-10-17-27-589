@@ -3,7 +3,8 @@ package com.thoughtworks.collection;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.toList;
 
 public class MyMap {
 
@@ -17,14 +18,14 @@ public class MyMap {
     }
 
     public List<Integer> getTriple() {
-        return array.stream().map(integer -> integer * 3).collect(Collectors.toList());
+        return array.stream().map(integer -> integer * 3).collect(toList());
     }
 
     public List<String> mapLetter() {
-        return array.stream().map(integer -> letters[integer - 1]).collect(Collectors.toList());
+        return array.stream().map(integer -> letters[integer - 1]).collect(toList());
     }
 
     public List<Integer> sortFromBig() {
-        return array.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+        return array.stream().sorted(Comparator.reverseOrder()).collect(toList());
     }
 }

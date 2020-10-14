@@ -1,7 +1,8 @@
 package com.thoughtworks.collection;
 
 import java.util.List;
-import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.toList;
 
 public class Reduce {
 
@@ -13,7 +14,7 @@ public class Reduce {
 
     public double getAverage() {
         int numberOfElements = arrayList.size();
-        List<Double> numbers = arrayList.stream().map(Double::valueOf).collect(Collectors.toList());
+        List<Double> numbers = arrayList.stream().map(Double::valueOf).collect(toList());
         return numbers.stream().reduce(Double::sum).map(total -> total / numberOfElements).get();
     }
 
